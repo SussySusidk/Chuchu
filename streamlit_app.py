@@ -7,6 +7,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+
 # Title of the Streamlit app
 st.title("Program 1: Temperature")
 
