@@ -1,5 +1,12 @@
 import streamlit as st
 
+st.markdown(
+    """
+    <meta name="google-site-verification" content="qxqV5BEGisxwrAHBO5rZtt-SlTXNtHUmyjpaXarHZrk" />
+    """,
+    unsafe_allow_html=True
+)
+
 # Title of the Streamlit app
 st.title("Program 1: Temperature")
 
