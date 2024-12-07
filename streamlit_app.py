@@ -206,13 +206,13 @@ void removeBook(char books[][MAX_TITLE_LENGTH], int *count) {
                 strcpy(books[j], books[j + 1]);
             }
             (*count)--;
-            printf("The book \"%s\" has been removed from the library.\\n", title);
+            printf("The book %s has been removed from the library.\\n", title);
             found = 1;
             break;
         }
     }
     if (!found) {
-        printf("The book \"%s\" was not found in the library.\\n", title);
+        printf("The book %s was not found in the library.\\n", title);
     }
     // Display updated list of books
     displayBooks(books, *count);
