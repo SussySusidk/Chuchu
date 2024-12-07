@@ -164,13 +164,13 @@ void searchBook(char books[][MAX_TITLE_LENGTH], int count) {
     title[strcspn(title, "\\n")] = 0; // Remove newline character
     for (int i = 0; i < count; i++) {
         if (strcmp(books[i], title) == 0) {
-            printf("The book \"%s\" is available in the library.\\n", title);
+            printf("The book %s is available in the library.\\n", title);
             found = 1;
             break;
         }
     }
     if (!found) {
-        printf("The book \"%s\" is not available in the library.\\n", title);
+        printf("The book %s is not available in the library.\\n", title);
     }
 }
 
